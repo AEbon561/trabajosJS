@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>imc</title>
+    <link rel="stylesheet" href="Bosstrap/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar bg-secondary border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+    <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+     11. Calculadora IMC
+    </a>
+    </div>
+    </nav>
+    <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center">
+        <h1>PESO (kg)</h1>
+        <input type="range" id="peso" min="30" max="100" value="30" class="form-control">
+        <h2 id="np">30 kg</h2>
+        <h1>ALTURA (cm)</h1>
+        <input type="range" id="altura" min="50" max="200" value="50" class="form-control">
+        <h1 id="al">100 cm</h1>
+        <div class="bg-black text-white align-center" style="height: 50px;"><h1>IMC</h1></div>
+        <div id="imc" class="w-100 bg-black text-white align-center height: 50px"><h1>0</h1></div>
+        <div class="text-white w-100 m-auto" style="background: rgb(19, 173, 184);" id="imc1">
+          <div class="row">
+            <div class="col"><h1>Bajo Peso</h1></div>
+            <div class="col"><h1>18.5></h1></div>
+          </div>
+        </div>
+
+        <div class="text-white w-100 m-auto" style="background: rgb(26, 238, 7);" id="imc2">
+            <div class="row">
+              <div class="col"><h1>Normal</h1></div>
+              <div class="col"><h1>18.5 a 25</h1></div>
+            </div>
+          </div>
+
+          <div class="text-white w-100 m-auto" style="background: rgb(251, 255, 0);" id="imc3">
+            <div class="row">
+              <div class="col"><h1>Sobrepeso</h1></div>
+              <div class="col"><h1>25 a 30</h1></div>
+            </div>
+          </div>
+
+          <div class="text-white w-100 m-auto" style="background: rgb(255, 136, 0);" id="imc4">
+            <div class="row">
+              <div class="col"><h1>Obesidad I</h1></div>
+              <div class="col"><h1>30 a 35</h1></div>
+            </div>
+          </div>
+
+          <div class="text-white w-100 m-auto" style="background: darkred;" id="imc5">
+            <div class="row">
+              <div class="col"><h1>Obesidad II</h1></div>
+              <div class="col"><h1>35 a 40</h1></div>
+            </div>
+          </div>
+
+          <div class="text-white w-100 m-auto" style="background: rgb(83, 0, 139);" id="imc6">
+            <div class="row">
+              <div class="col"><h1>Obesidad III</h1></div>
+              <div class="col"><h1>40<</h1></div>
+            </div>
+          </div>
+          <div>
+            <div class="row">
+              <div id="mensajeIMC" class="text-white fs-4 mt-3 p-3 rounded shadow" style="background: rgba(0,0,0,0.5);">info</div>
+            </div>
+          </div>
+    </div>
+    
+    <script src="Jvs/11.js"></script>
+</body>
+</html>

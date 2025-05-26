@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="Bosstrap/bootstrap.min.css">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">
+            <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Signo zodiacal
+          </a>
+        </div>
+      </nav>
+      <br>
+      <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center">
+        <div class="row">
+            <div class="col">
+                <h4>DIA DE NACIMIENTO</h4>
+                <input type="range" min="1" max="30"  value="1" id="dia" class="form-control w-75 d-inline-block"><span class="h1 w-75 d-inline-block" id="vdia">1</span>
+                <h1>MES DE NACIMIENTO</h1>
+                <div class="input-group">
+                    <select name="" id="mes" class="form-control">
+                        <option value="01">Enero</option>
+                        <option value="02">Febrero</option>
+                        <option value="03">Marzo</option>
+                        <option value="04">Abril</option>
+                        <option value="05">Mayo</option>
+                        <option value="06">Junio</option>
+                        <option value="07">Julio</option>
+                        <option value="08">Agosto</option>
+                        <option value="09">Septiembre</option>
+                        <option value="10">Octubre</option>
+                        <option value="11">Noviembre</option>
+                        <option value="12">Diciembre</option>
+
+                    </select>
+
+                   
+            </div>
+            <h1 id="fecha">1 DE ENERO</h1>
+            <h2 id="sig">Signo</h2>
+            <p id="descripcion" class="lead"></p>
+                    <img src="img/fondozodiaco.jpg" alt="" id="fodozodiaco" class="rounded mx-auto d-block"><br>
+                    <h3>Compatible con:</h3>
+                    <h4 id="compatibleNombre"></h4>
+                    <img id="compatibleImg" src="" class="rounded mx-auto d-block" width="200">
+                    <p id="compatibleDesc" class="text-muted"></p>
+        </div>
+        
+ 
+      </div>
+      <script src="Bosstrap/bootstrap.bundle.min.js"></script>
+           <script src="Jvs/13.js"></script>
+</body>
+</html>

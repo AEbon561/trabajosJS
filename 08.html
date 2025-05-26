@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figuras</title>
+    <link href="Bosstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+    
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">
+            <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Figura
+          </a>
+        </div>
+      </nav>
+      <br>
+      <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center"> 
+
+        <div class="row">
+            <div class="col">
+                <h1>propiedadaes de la figura</h1>
+                
+                <h4>ancho</h4>
+                <input type="range" id="ancho" min="1" max="500" value="10" class="form-control"><span id="vancho">10</span>
+                
+
+
+                <h4>alto</h4>
+                <input type="range" id="alto" min="1" max="500" value="10" class="form-control"><span id="valto">10</span>
+
+
+                <h4>color de fondo 1</h4>
+                <input type="color" id="colorfondo1" value="#ffffff">
+
+                <h4>color de fondo 2</h4>
+                <input type="color" id="colorfondo2" value="#ffffff">
+
+                <h4>border radius</h4>
+                <input type="range" id="radius" min="1" max="100" value="10"class="form-control"><span id="vradius">10</span>
+
+                <h4>ancho borde</h4>
+                <input type="range" id="borde" min="1" max="50" value="10"class="form-control"><span id="vborde">10</span>
+
+
+                <h4>color de fondo</h4>
+                <input type="color" id="colorBorde" value="#ffffff">
+                
+                
+
+            </div>
+            <div class="col">
+                <h1>figura</h1>
+                <div id="figura" class="m-auto"></div>
+                
+            </div>
+
+        </div>
+       
+
+      </div>
+
+     
+    <script src="Bosstrap/js/bootstrap.bundle.js"></script>
+    <script src="Jvs/08.js"></script>
+
+</body>
+</html>

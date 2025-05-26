@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áreas</title>
+    <link href="Bosstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+  <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="Index.html">
+        <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        ÁREAS
+      </a>
+    </div>
+  </nav>
+  <br>
+
+  <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-50 m-auto text-center">
+        <button class="btn btn-warning" id="btnCuadro">CUADRO</button>
+        <button class="btn btn-primary" id="btnRec">RECTÁNGULO</button>
+        <button class="btn btn-secondary" id="btnTri">TRIÁNGULO</button>
+        <button class="btn btn-danger" id="btnCirculo">CÍRCULO</button>
+        <button class="btn btn-success" id="btnRombo">ROMBO</button>
+        <button class="btn btn-info" id="btnPentagono">PENTÁGONO</button>
+
+        <div class="card w-75 m-auto shadow text-center my-4" id="capa">
+            <div id="cuadro">
+                <h1 class="my-4">ÁREA DEL CUADRO</h1>
+                <div class="row">
+                    <div class="col p-5">
+                        <h4>LADO</h4>
+                        <input type="range" id="lado" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vlado" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ÁREA</h4>
+                        <h2 id="areaCuadro">1 m<sup>2</sup></h2>
+                    </div>
+                </div>
+            </div>
+            <div id="rectangulo" style="display: none;">
+                <h1 class="my-4">ÁREA DEL RECTÁNGULO</h1>
+                <div class="row">
+                    <div class="col p-5">
+                        <h4>BASE</h4>
+                        <input type="range" id="base" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vbase" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ALTURA</h4>
+                        <input type="range" id="altura" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="valtura" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ÁREA</h4>
+                        <h2 id="areaRectangulo">1 m<sup>2</sup></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="triangulo" style="display: none;">
+                <h1 class="my-4">ÁREA DEL TRIÁNGULO</h1>
+                <div class="row">
+                    <div class="col p-5">
+                        <h4>BASE</h4>
+                        <input type="range" id="baseTri" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vbaseTri" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ALTURA</h4>
+                        <input type="range" id="alturaTri" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="valturaTri" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ÁREA</h4>
+                        <h2 id="areaTriangulo">1 m<sup>2</sup></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="circulo" style="display: none;">
+                <h1 class="my-4">ÁREA DEL CÍRCULO</h1>
+                <div class="row">
+                    <div class="col p-5">
+                        <h4>RADIO</h4>
+                        <input type="range" id="radio" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vradio" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ÁREA</h4>
+                        <h2 id="areaCirculo">1 m<sup>2</sup></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="rombo" style="display: none;">
+                <h1 class="my-4">ÁREA DEL ROMBO</h1>
+                <div class="row">
+                    <div class="col p-5">
+                        <h4>DIAGONAL MAYOR</h4>
+                        <input type="range" id="dMayorRombo" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vdMayorRombo" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>DIAGONAL MENOR</h4>
+                        <input type="range" id="dMenorRombo" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vdMenorRombo" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ÁREA</h4>
+                        <h2 id="areaRombo">1 m<sup>2</sup></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div id="pentagono" style="display: none;">
+                <h1 class="my-4">ÁREA DEL PENTÁGONO</h1>
+                <div class="row">
+                    <div class="col p-5">
+                        <h4>LADO</h4>
+                        <input type="range" id="ladoPentagono" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vladoPentagono" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>APOTEMA</h4>
+                        <input type="range" id="apotemaPentagono" class="form-control" value="1" min="1" max="100" step="1">
+                        <h1 id="vapotemaPentagono" class="p-3">1</h1>
+                    </div>
+                    <div class="col p-5">
+                        <h4>ÁREA</h4>
+                        <h2 id="areaPentagono">1 m<sup>2</sup></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Bosstrap/js/bootstrap.bundle.js"></script>
+    <script src="Jvs/07.js"></script>
+</body>
+</html>

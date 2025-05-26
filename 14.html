@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="Bosstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">
+            <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Pipshash
+          </a>
+        </div>
+      </nav>
+      <br>
+      <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center">
+<div class="row">
+  <div class="col">
+    <img src="img/pípisas.png" alt="" class="p-3 mb-5 mt-3 w-75 m-auto text-center bg-black ">
+  </div>
+  <div class="col">
+    <h4>ORDEN</h4>
+    <table class="w-100 " >
+      <tr>
+        <td class="text-start">
+        <h4>CANTIDAD</h4>
+        </td>
+        <td>
+          <input type="range" min="1" max="10" value="1" class="form-control" id="cantidad">
+        </td>
+        <td>
+          <h2 class="px-5" id="vcantidad">1</h2>
+        </td>
+      </tr>
+      <tr>
+        <td class="text-start">
+          <h4>TAMAÑO</h4>
+        </td>
+        <td class="text-start">
+          <input type="radio" name="tamannio" id="familiar"><span class="h5">FAMILIAR $210</span><br>
+          <input type="radio" name="tamannio" id="grande"><span class="h5">GRANDE $160</span><br>
+          <input type="radio" name="tamannio" id="individual"><span class="h5">INDIVIDUAL $99</span><br>
+          <input type="radio" name="tamannio" id="jumbo"><span class="h5">JUMBO $299<br>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="text-start">
+          <h4>ESPECIALIDAD</h4>
+        </td>
+        <td>
+          <select name="" id="especialidad" class="form-control">
+          <option value="1">1 INGREDIENTE</option>
+          <option value="2">2 INGREDIENTES</option>
+          <option value="3">3 INGREDIENTES</option>
+          <option value="4">4 INGREDIENTES</option>
+         </select>
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="text-start">
+          <h4>COMPLEMENTO</h4>
+        </td>
+        <td class="text-start">
+          <P><input type="checkbox" id="alitas" class="form-check-inline" > <span class="h5">ALITAS</span></P>
+          <P><input type="checkbox" id="refrescos"class="form-check-inline"><span class="h5">REFRESCOS 2L</span></P>
+          <P><input type="checkbox" id="nugget" class="form-check-inline"><span class="h5">NUGGET </span></P>
+        </td>       
+      </tr>
+      <tr>
+        <td colspan="3">
+          <h1 id="total" style="font-size: 50px;font-weight: bold;">TOTAL $ 0.00 MXN</h1>
+        </td>
+      </tr>
+    </table>
+    <button class="btn btn-primary p-3" id="btmpagar"><span class="h2 text-center">PAGAR</span></button>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="Bosstrap/bootstrap.bundle.min.js"></script>
+<script src="Jvs/14.js"></script>
+</body>
+</html>

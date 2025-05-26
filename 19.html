@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetos JS</title>
+    <link rel="stylesheet" href="Bosstrap/bootstrap.min.css">
+</head>
+    <body class="bg-secondary">
+        <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="Index.html">
+                <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Objetos JS 
+              </a>
+            </div>
+          </nav>
+          <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center">
+
+        
+<button type="button" class="btn btn-primary float-end my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+   Agregar Alumno
+  </button>
+  
+  
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">REGISTRO ALUMNO</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        </div>
+
+        <div class="modal-body text-center">
+        <label for="">NOMBRE</label>
+                <input type="text" id="nombre" class="form-control w50 m-auto my-3" placeholder="Nombre Alumno">
+                <label for="">APELLIDO PATERNO</label>
+                <input type="text" id="AP" class="form-control w50 m-auto my-3" placeholder="Apellido Paterno">
+                <label for="">APELLIDO MATERNO</label>
+                <input type="text" id="AM" class="form-control w50 m-auto my-3" placeholder="Apellido Materno">
+                 <label for="">Grupo</label>
+                 <select name="" id="grupo">
+                    <option value="601">601</option>
+                    <option value="602">602</option>
+                    <option value="603">603</option>
+                    <option value="604">604</option>
+                    <option value="605">605</option>
+                    <option value="605">605</option>
+                    <option value="502">502</option>
+                    <option value="503">503</option>
+                    <option value="504">504</option>
+                    <option value="505">505</option>
+                    <option value="401">401</option>
+                    <option value="402">402</option>
+                    <option value="403">403</option>
+                    <option value="404">404</option>
+                    <option value="405">405</option>
+                    <option value="301">301</option>
+                    <option value="302">302</option>
+                    <option value="303">303</option>
+                    <option value="304">304</option>
+                    <option value="305">305</option>
+                    <option value="201">201</option>
+                    <option value="202">202</option>
+                    <option value="203">203</option>
+                    <option value="204">204</option>
+                    <option value="205">205</option>
+                    <option value="101">101</option>
+                    <option value="102">102</option>
+                    <option value="103">103</option>
+                    <option value="104">104</option>
+                    <option value="105">105</option>
+                 </select>
+                 <label for="">CARRERA</label>
+                 <select name="" id="carrera">
+                    <option value="programacion">programacion</option>
+                    <option value="ventas">ventas</option>
+                    <option value="maquinas">maquinas</option>
+                 </select>
+        </div>
+
+        <div class="modal-footer">
+          <button class="btn bg-white w-100" id="btnadd">Agregar</button>
+          <button class="btn bg-white w-100" id="btnreset">Borrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+
+       <div class="modal fade" id="editaralumno" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+         <div class="modal-dialog">
+           <div class="modal-content">
+             <div class="modal-header">
+               <h1 class="modal-title fs-5" id="exampleModalLabel">EDITAR ALUMNO</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+     
+             </div>
+     
+             <div class="modal-body">
+             <label for="">NOMBRE</label>
+                     <input type="text" id="enombre" class="form-control w50 m-auto my-3" placeholder="Nombre Alumno">
+                     <label for="">APELLIDO PATERNO</label>
+                     <input type="text" id="eAP" class="form-control w50 m-auto my-3" placeholder="Apellido Paterno">
+                     <label for="">APELLIDO MATERNO</label>
+                     <input type="text" id="eAM" class="form-control w50 m-auto my-3" placeholder="Apellido Materno">
+                      <label for="">Grupo</label>
+                      <select name="" id="egrupo">
+                         <option value="601">601</option>
+                         <option value="602">602</option>
+                         <option value="603">603</option>
+                         <option value="604">604</option>
+                         <option value="605">605</option>
+                         <option value="605">605</option>
+                         <option value="502">502</option>
+                         <option value="503">503</option>
+                         <option value="504">504</option>
+                         <option value="505">505</option>
+                         <option value="401">401</option>
+                         <option value="402">402</option>
+                         <option value="403">403</option>
+                         <option value="404">404</option>
+                         <option value="405">405</option>
+                         <option value="301">301</option>
+                         <option value="302">302</option>
+                         <option value="303">303</option>
+                         <option value="304">304</option>
+                         <option value="305">305</option>
+                         <option value="201">201</option>
+                         <option value="202">202</option>
+                         <option value="203">203</option>
+                         <option value="204">204</option>
+                         <option value="205">205</option>
+                         <option value="101">101</option>
+                         <option value="102">102</option>
+                         <option value="103">103</option>
+                         <option value="104">104</option>
+                         <option value="105">105</option>
+                      </select>
+                      <label for="">CARRERA</label>
+                      <select name="" id="ecarrera">
+                         <option value="programacion">programacion</option>
+                         <option value="ventas">ventas</option>
+                         <option value="maquinas">maquinas</option>
+                      </select>
+                      <input type="hidden" id="index">
+             </div>
+             
+     
+             <div class="modal-footer">
+               <button class="btn bg-white w-100" id="btnGuardar" onclick="guardarAlumno()">Guardar</button>
+               <button class="btn bg-white w-100" id="btnreset">cancelar</button>
+             </div>
+           </div>
+         </div>
+       </div>
+       <div>
+
+
+        <table class="table table-bordered">
+            <tr>
+                <th>NOMBRE</th>
+                <th>APPELLIDO PATERNO</th>
+                <th>APELLIDO MATERNO</th>
+                <th>GRUPO</th>
+                <th>CARRERA</th>
+                <th>ELIMINAR</th>
+                <th>ACTUALIZAR</th>
+            </tr>
+            <tbody id="tablaalumnos">
+
+            </tbody>
+        </table>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="Jvs/19.js"></script>
+        <script src="Bosstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

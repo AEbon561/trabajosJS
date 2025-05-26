@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bosstrap/bootstrap.min.css">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">
+            <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        CONVERSOR DE DIVISAS 
+          </a>
+        </div>
+      </nav>
+      <br>
+    <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-30 w-50 m-50 text-center">
+      <div class="row">
+        <div class="col">
+          <h1>CONVERSOR DE DIVISAS</h1>
+          <h4>DE</h4>
+                <input type="range" min="1" max="10" value="1" class="form-control" id="cant"> <span id="vcant">0</span>
+          <table class="w-100 ">
+            <tr>
+              <td><h5>DE:</h5></td>
+              <td>
+                <select name="" id="valor1" class="form-control">
+                  <option value="USD">USD</option>
+                  <option value="MXN">MXN</option>
+                  <option value="COP">COP</option>
+                  <option value="EUR">EUR</option>
+                 </select>
+              </td>
+            </tr>
+            <tr>
+              <td><h5>A:</h5></td>
+              <td>
+                <select name="" id="valor2" class="form-control">
+                  <option value="USD">USD</option>
+                  <option value="MXN">MXN</option>
+                  <option value="COP">COP</option>
+                  <option value="EUR">EUR</option>
+                 </select>
+              </td>
+            </tr>
+          </table>
+          <div class="card bg-dark text-white h1 text-center d-flex justify-content-center align-items-center" style="height: 200px;">
+           <span id="res">10 USD SON 200 MXN</span> 
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="Bosstrap/bootstrap.bundle.min.js"></script>
+<script src="Jvs/15.js"></script>
+</body>
+</html>

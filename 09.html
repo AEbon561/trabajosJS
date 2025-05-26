@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+    <link href="Bosstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<body  class="bg-secondary">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">
+            <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Tabla
+          </a>
+        </div>
+      </nav>
+    <br>
+    <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center"> 
+
+      <div class="w-50 m-auto" >
+
+          <h4>FILAS</h4>
+      <input type="range" id="filas" min="1" max="20" value="1" class="form-control"><samp id="vfilas">1</samp>
+
+      <h4>COLUMNAS</h4>
+      <input type="range" id="columnas" min="1" max="20" value="1"  class="form-control"><samp id="vcolumnas">1</samp>
+
+      <h4>COLOR 1</h4>
+      <input type="color" id="color1" >
+
+      <h4>COLOR 2</h4>
+      <input type="color" id="color2">
+
+      <h4>CONTENIDO</h4>
+      <input type="text" id="contenido" placeholder="INGRESE TEXTO" class="form-control w-50" maxlength="10" >
+      
+
+      </div>
+      
+      <table id="soytabla" border class="mt-5">
+
+      </table>
+
+              
+              
+              
+</div>
+
+<script src="Bosstrap/js/bootstrap.bundle.js"></script>
+<script src="Jvs/09.js"></script>
+</body>
+</html>

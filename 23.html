@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="Bosstrap/bootstrap.min.css">
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <body class="bg-danger-subtle" id="body">
+
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid ">
+          <a class="navbar-brand m-auto" href="index.html">
+            <img src="img/foto.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top m-auto rounded-5">
+            Imagenes
+          </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid shadow p-5 mb-5 bg-body-tertiary rounded mt-3 w-75 ">
+
+       <div class="tab-pane text-center" id="justified-tabpanel-2" role="tabpanel" aria-labelledby="justified-tab-2">
+                <h1>GUARDAR IMAGEN EN LOCALSTORAGE</h1>
+
+                 <button type="button" class="btn btn-primary float-end my-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="bi bi-person-plus mx-2"></i>Agregar Imagen
+                </button>
+
+                <div class="modal fade" id="exampleModal"  data-backdrop="" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content bg-gradient">
+
+                        <div class="modal-header">
+
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">NUEVA IMAGEN</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div class="modal-body text-center">
+
+                        <input type="text" id="nombre" class="form-control w-50 m-auto my-3" placeholder="IMAGEN">
+                        <input type="file" class="form-control" id="imagen">
+                        
+                        </div>
+
+                        <div class="modal-footer">
+
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                       <button type="button" class="btn btn-dark" id="btnAgregarImagen" onclick="agregarImagen2()">Agregar</button>
+
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+
+                 <div class="modal fade"  data-backdrop="" id="editImagenModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered ">
+                    <div class="modal-content ">
+
+                        <div class="modal-header">
+
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">EDITAR CATEGORIA</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+                        </div>
+                        <div class="modal-body text-center">
+                        
+                       <input type="text" id="enombre">
+                       <div class="col">
+                        <h1>IMAGEN GUARDADA</h1>
+                       <img id="imagenprevia" width="100" height="100" >
+                       </div>
+                      <hr>
+                        <h1>NUEVA IMAGEN</h1>
+                       <input type="file" id="eimagen">
+                       
+                      
+                       <input type="hidden" id="index">
+                       
+                        
+                        </div>
+
+                        <div class="modal-footer">
+
+                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Cancelar</button>
+                        <button type="button" class="btn btn-dark" onclick="guardarImagen()">Guardar</button>
+
+                        </div>
+
+                    </div>
+                    </div>
+                </div>
+  
+                <table class="table table-bordered table-hover table-striped " >
+                    <tr class="table-dark">
+                    <th>NOMBRE</th>
+                    <th>IMAGEN</th>
+                    <th>ELIMINAR</th>
+                    <th>EDITAR</th>
+                    </tr>
+                    <tbody id="tablaImagen"> 
+
+                    </tbody>
+                </table>
+
+                
+            </div>
+
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Jvs/23.js"></script>
+</body>
+</html>

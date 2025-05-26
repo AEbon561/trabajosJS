@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Bosstrap/bootstrap.min.css">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">
+            <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+        LOCALSTORAGE
+          </a>
+        </div>
+      </nav>
+      <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 text-center">
+   
+        <div class="card shadow w-50 m-auto p-4 bg-primary bg-gradient">
+    <h2>EJEMPLO 1</h2>
+    <input type="text" id="mensaje" class="form-control w-50 m-auto my-3" >
+ <button class="btn btn-success w-50 my-2 m-auto" onclick="guardarMensaje()">GUARDAR</button>
+ <button class="btn btn-success w-50 my-2 m-auto" onclick="borrarMensaje()">BORRAR</button>
+ <button class="btn btn-success w-50 my-2 m-auto" onclick="recupearMensaje()">RECUPERAR</button>
+        </div>
+
+        <div class="card shadow w-50 m-auto p-4 bg-primary bg-gradient mt-4">
+            <h2>EJEMPLO 2</h2>
+<input type="text" id="key" class="form-control w-50 m-auto my-3"placeholder="KEY">
+<input type="text" id="value" class="form-control w-50 m-auto my-3"placeholder="VALUE">
+         <button class="btn btn-success w-50 my-2 m-auto" onclick="guardar()">GUARDAR</button>
+         <button class="btn btn-success w-50 my-2 m-auto" onclick="borrar()">BORRAR</button>       
+          <button class="btn btn-success w-50 my-2 m-auto" onclick="borrarLS()">BORRARLS</button>
+          <button class="btn btn-success w-50 my-2 m-auto" onclick="recuperar()">RECUPERAR</button>
+     </div>
+        
+    <div class="card shadow w-50 m-auto p-4 bg-primary bg-gradient mt-4">
+<h1>EJEMPLO 3</h1>
+        <label for="">NOMBRE</label>
+        <input type="text" id="nombre" class="form-control w50 m-auto my-3" placeholder="Nombre Alumno">
+        <label for="">APELLIDO PATERNO</label>
+        <input type="text" id="AP" class="form-control w50 m-auto my-3" placeholder="Apellido Paterno">
+        <label for="">APELLIDO MATERNO</label>
+        <input type="text" id="AM" class="form-control w50 m-auto my-3" placeholder="Apellido Materno">
+         <label for="">Grupo</label>
+         <select name="" id="grupo">
+            <option value="601">601</option>
+            <option value="602">602</option>
+            <option value="603">603</option>
+            <option value="604">604</option>
+            <option value="605">605</option>
+            <option value="605">605</option>
+            <option value="502">502</option>
+            <option value="503">503</option>
+            <option value="504">504</option>
+            <option value="505">505</option>
+            <option value="401">401</option>
+            <option value="402">402</option>
+            <option value="403">403</option>
+            <option value="404">404</option>
+            <option value="405">405</option>
+            <option value="301">301</option>
+            <option value="302">302</option>
+            <option value="303">303</option>
+            <option value="304">304</option>
+            <option value="305">305</option>
+            <option value="201">201</option>
+            <option value="202">202</option>
+            <option value="203">203</option>
+            <option value="204">204</option>
+            <option value="205">205</option>
+            <option value="101">101</option>
+            <option value="102">102</option>
+            <option value="103">103</option>
+            <option value="104">104</option>
+            <option value="105">105</option>
+         </select>
+         <label for="">CARRERA</label>
+         <select name="" id="carrera">
+            <option value="programacion">programacion</option>
+            <option value="ventas">ventas</option>
+            <option value="maquinas">maquinas</option>
+        </select>
+        <button class="btn btn-success w-50 my-2 m-auto" onclick="AddAlumno()">GUARDAR</button>
+         <button class="btn btn-success w-50 my-2 m-auto" onclick="borrarA()">BORRAR</button>       
+          <button class="btn btn-success w-50 my-2 m-auto" onclick="borrarLS()">BORRARLS</button>
+          <button class="btn btn-success w-50 my-2 m-auto" onclick="recuperarA()">RECUPERAR</button>
+    </div>
+
+</div>
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+        <script src="Jvs/20.js"></script>
+        <script src="Bosstrap/bootstrap.bundle.min.js"></script>
+</body>
+</html>

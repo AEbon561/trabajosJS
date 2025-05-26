@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salario</title>
+    <link href="Bosstrap/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-secondary">
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="Index.html">
+            <img src="img/cecytemlogo.jpg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+            Salario
+          </a>
+        </div>
+      </nav>
+      <br>
+      <div class="container-fluid shadow p-3 mb-5 bg-body-tertiary rounded mt-3 w-75 m-auto text-center"> 
+        <div class="row">
+            <div class="col">
+              <h4>CARGO</h4>
+              <select name="" id="cargo">
+                <option value="GERENTE">GERENTE</option>
+                <option value="EJECUTIVO">EJECUTIVO</option>
+                <option value="SUPERVISOR">SUPERVISOR</option>
+                <option value="AYUDANTE">AYUDANTE</option>
+                <option value="OFICINISTA">OFICINISTA</option>
+                <option value="PRACTICANTE">PRACTICANTE</option>
+              </select>
+            </div>
+            <div class="col">
+              <h4>HORAS</h4>
+              <input type="range" min="0" max="60" value="0" id="hora" class="form-control">
+              <span id="vhora">0</span>
+              <h4>ANTIGUEDAD</h4>
+              <input type="range" min="0" max="60" value="0" id="antiguedad" class="form-control">
+              <span id="vantiguedad">0</span>
+            </div>
+          </div>
+          <table class="table table-border">
+           <table class="table table-bordered"> 
+       
+                       <tr>
+                           <td colspan="2">
+                               <h2> PERCEPCIONES</h2>
+                           </td>
+                           <td colspan="2">
+                               <h2> DEDUCCIONES</h2>
+                           </td>
+                       </tr>
+                       <tr>
+                           <td><h4> SUELDO BASE </h4></td>
+                           <td><h4 id="sb">$ 0.0 </h4></td>
+                           <td><h4 > ISR</h4></td>
+                           <td><h4 id="isr">$ 0.0 </h4> </td>
+                       </tr>
+                       <tr>
+                           <td><h4> CANASTA BASICA</h4></td>
+                           <td><h4 id="cb">$ 0.0 </h4></td>
+                           <td><h4 > SERVICIOS DE SALUD</h4></td>
+                           <td><h4 id="ss">$ 0.0 </h4> </td>
+                       </tr>
+                       <tr>
+                           <td><h4> ESTIMULO</h4></td>
+                           <td><h4 id="e">$ 0.0 </h4></td>
+                           <td><h4 > SINDICATO</h4></td>
+                           <td><h4 id="s">$ 0.0 </h4> </td>
+                       </tr>
+                       <tr>
+                           <td><h4> ANTIGUEDAD</h4></td>
+                           <td><h4 id="an">$ 0.0 </h4></td>
+                           <td><h4 > AFORE</h4></td>
+                           <td><h4 id="afore">$ 0.0 </h4> </td>
+                       </tr>
+                   <tr>
+                       <td  class="bg-black text-white" >
+                           <h2 >TOTAL PERCEPCIONES</h2>
+                       </td>
+                       <td class="bg-black text-white">
+                           <h4 id="tp">$ 0.0</h4>
+                       </td>
+                       <td  class="bg-black text-white" ><h2>TOTAL DEDUCCIONES</h2></td>
+                       <td class="bg-black text-white">
+                           <h4 id="td">$ 0.0</h4>
+                       </td>
+                   </tr>
+                   <tr>
+                       <td colspan="2" class="bg-primary-subtle text-white">
+                           <h1>SALARIO NETO</h1>
+                       </td >
+                       <td colspan="2" class="bg-primary-subtle text-white">  <h4 id="sn">$ 0.0</h4></td>
+                   </tr>
+               </table>
+           </div>
+           <script src="Bosstrap/bootstrap.bundle.min.js"></script>
+           <script src="Jvs/12.js"></script>
+       </body>
+</html>

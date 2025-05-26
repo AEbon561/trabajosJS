@@ -57,7 +57,7 @@ const actualizarTablaImagen=()=>{
     p.imagen && p.imagen.data
       ? `<img src="${p.imagen.data}" width="50px" height="50px">`
       : "Sin imagen"
-  } ,m.ñ
+  } 
 </td>
           <td><button class="btn btn-danger" onclick="eliminarImagen(${index})"><i class="bi bi-trash"></i></button></td>
           <td><button class="btn btn-warning" onclick="editarImagen(${index})" data-bs-toggle="modal" data-bs-target="#editImagenModal"><i class="bi bi-pencil"></i></button></td>

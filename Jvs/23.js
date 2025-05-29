@@ -1,14 +1,9 @@
 var arrayimagen=JSON.parse(localStorage.getItem("imagenes"))||[]  
 
 const agregarImagen2 = () => {
-    let NOMBRE = document.getElementById("nombre").value;
+   
     let input = document.getElementById('imagen');
     const file = input.files[0];
-    
-    if (NOMBRE.trim() === '') {
-        Swal.fire({icon: "error", title: "Oops...", text: "El campo nombre está vacío!"});
-        return;
-    }
     
     if (!file) {
         Swal.fire({icon: "error", title: "Oops...", text: "Debes seleccionar una imagen!"});
@@ -25,7 +20,6 @@ const agregarImagen2 = () => {
         };
         
         let imagen = {
-             nombre: NOMBRE,
              imagen: imageData
         };
         
@@ -50,9 +44,8 @@ const actualizarTablaImagen=()=>{
   arrayimagen=JSON.parse(localStorage.getItem("imagenes"))||[]
   arrayimagen.map(p=>{
     tablaHTML+=`
-        <tr>
-          <td>${p.nombre}</td>
-       <td>
+    <tr>
+    <td>
   ${
     p.imagen && p.imagen.data
       ? `<img src="${p.imagen.data}" width="50px" height="50px">`
@@ -96,7 +89,6 @@ const eliminarImagen=(index)=>{
 const editarImagen = (index) => {
   arrayimagen = JSON.parse(localStorage.getItem("imagenes")) || [];
   let imagen = arrayimagen[index];
-  document.getElementById("enombre").value = imagen.nombre;
 
   if (imagen.imagen && imagen.imagen.data) {
     document.getElementById("imagenprevia").src = imagen.imagen.data;
@@ -110,11 +102,9 @@ const guardarImagen = () => {
   let arrayimagen = JSON.parse(localStorage.getItem("imagenes")) || [];
 
   const index = parseInt(document.getElementById("index").value, 10);
-  const Nnombre= document.getElementById("enombre").value;
   const archivo = document.getElementById("eimagen").files[0];
 
   if (!archivo) {
-    arrayimagen[index].nombre = Nnombre;
     localStorage.setItem("imagenes", JSON.stringify(arrayimagen));
     actualizarTablaImagen();
     return;
@@ -126,7 +116,6 @@ const guardarImagen = () => {
     const dataUrl = e.target.result;
 
     arrayimagen[index] = {
-      nombre: Nnombre,
       imagen: {
         name: archivo.name,
         data: dataUrl
